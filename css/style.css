@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+a {
+  text-decoration: none;
+}
+
+#sigma-gif {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+#sigma-title {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+h1 {
+  color: white;
+  font-size: 120px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  line-height: 100px;
+}
+
+#join-btn {
+  padding: 0.5em 1em;
+  background: #303030;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+}
+
+#parrafo_sigma {
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+
+#about-sigmas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 95% 5%;
+  font-family: "Bebas Neue";
+  background-image: url(https://static.wikia.nocookie.net/joke-battles/images/d/df/Gigachad.png);
+  background-repeat: repeat;
+}
+
+#about, #duolingo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#about h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#about div{
+    background: #000;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+#duolingo iframe{
+    width: 366px;
+    height: 650px;
+    border-radius: 10px;
+}
+
+footer {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 800px) {
+  #sigma-title {
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  #about-sigmas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  #duolingo iframe{
+    width: 300px;
+    height: 533px;
+  }
+
+  footer{
+    width: 100%;
+    padding: 10px;
+  }
+}
